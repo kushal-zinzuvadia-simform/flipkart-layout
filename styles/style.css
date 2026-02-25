@@ -3,7 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --blue-background: #2874F0;
+    --offer-text-green: #388E3C;
+    --gray-text: #7F7F7F;
+    --main-background: #F1F3F6;
+}
 
 body {
     display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: var(--main-background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto auto;
 }

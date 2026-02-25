@@ -1,11 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A single-page skeleton UI clone of Flipkart's home page, designed to replicate the core layout and structure for learning and frontend practice.">
+    <meta name="keywords" content="Flipkart UI Clone, Frontend Practice, HTML CSS Project, Skeleton Layout">
+    <meta name="author" content="Kushal Zinzuvadia">
+
+    <!-- Open graph meta taga -->
+    <meta property="og:title" content="Flipkart Skeleton UI">
+    <meta property="og:description"
+        content="Flipkart Skeleton UI - This Project is a single-page skeleton UI clone of flipkart's main page.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/image/flipkart_cover_page.jpg">
+    
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flipkart Skeleton UI">
+    <meta name="twitter:description"
+        content="Flipkart Skeleton UI - This Project is a single-page skeleton UI clone of flipkart's main page.">
+    <meta name="twitter:image" content="/assets/image/flipkart_cover_page.jpg">
+
+    <link rel="icon" href="/assets/icon/flipkart.svg">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/header.css">
     <title>Flipkart</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-section">
+                    <!-- Logo -->
+                    <a href="#" class="logo-link">
+                        <img src="/assets/icon/flipkart-header.svg" alt="Flipkart" class="logo-image">
+                    </a>
+
+                    <!-- Search Bar -->
+                    <div class="searchbar-wrapper">
+                        <input type="text" class="searchbar-input" placeholder="Search for products, brands and more"
+                            aria-label="Search for product, brands and more">
+                        <button class="searchbar-button">
+                            <img src="/assets/icon/search.svg" alt="Search">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header-section">
+                    <!-- Login Button -->
+                    <button class="login-button">
+                        Login
+                    </button>
+
+                    <!-- More -->
+                    <a href="#" class="header-link more-link">
+                        <span>More</span>
+                        <img src="/assets/icon/dropdown.svg" alt="">
+                    </a>
+
+                    <!-- Cart -->
+                    <a href="#" class="header-link cart-link">
+                        <img src="/assets/icon/cart.svg" alt="Shopping cart">
+                        <span>Cart</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="categories-nav">
+                    <div class="categories-wrapper">
+
+                        <a href="#" class="category-item" aria-label="Category Top offers">
+                            <img src="/assets/image/categories/top-offers.svg" alt="Top offers">
+                            <span>Top Offers</span>
+                        </a>
+
+                        <a href="#" class="category-item" aria-label="Category Grocery">
+                            <img src="/assets/image/categories/grocery.svg" alt="Grocery">
+                            <span>Grocery</span>
+                        </a>
+
+                        <a href="#" class="category-item" aria-label="Category Mobiles">
+                            <img src="/assets/image/categories/mobiles.svg" alt="Mobiles">
+                            <span>Mobiles</span>
+                        </a>
+
+                        <a href="#" class="category-item" aria-label="Category Fashion">
+                            <img src="/assets/image/categories/fashion.svg" alt="Fashion">
+                            <div class="category-with-dropdown">
+                                <span>Fashion</span>
+                                <img src="/assets/icon/dropdown-1.svg" class="dropdown-icon" alt="">
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-item" aria-label="Category Electronics">
+                            <img src="/assets/image/categories/electronics.svg" alt="Electronics">
+                            <div class="category-with-dropdown">
+                                <span>Electronics</span>
+                                <img src="/assets/icon/dropdown-1.svg" class="dropdown-icon" alt="">
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-item" aria-label="Category Home">
+                            <img src="/assets/image/categories/home.svg" alt="Home">
+                            <div class="category-with-dropdown">
+                                <span>Home</span>
+                                <img src="/assets/icon/dropdown-1.svg" class="dropdown-icon" alt="">
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-item" aria-label="Category Appliances">
+                            <img src="/assets/image/categories/appliances.svg" alt="Appliances">
+                            <div class="category-with-dropdown">
+                                <span>Appliances</span>
+                                <img src="/assets/icon/dropdown-1.svg" class="dropdown-icon" alt="">
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-item" aria-label="Category Travel">
+                            <img src="/assets/image/categories/travel.svg" alt="Travel">
+                            <span>Travel</span>
+                        </a>
+
+                        <a href="#" class="category-item" aria-label="Category Beauty, Toys & more">
+                            <img src="/assets/image/categories/beauty-toys.svg" alt="Beauty, Toys & more">
+                            <div class="category-with-dropdown">
+                                <span>Beauty, Toys & More</span>
+                                <img src="/assets/icon/dropdown-1.svg" class="dropdown-icon" aria-hidden="true" alt="">
+                            </div>
+                        </a>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main></main>
 </body>
 </html>
