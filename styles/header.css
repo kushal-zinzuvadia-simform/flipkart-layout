@@ -88,12 +88,15 @@
 /* Login Button */
 
 .login-button {
+    display: inline-block; 
     background: white;
     color: var(--blue-background);
+    text-decoration: none; 
     border: none;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 2.5rem;
     font-weight: 600;
     cursor: pointer;
+    border-radius: 1px; 
 }
 
 /* Header Links */
