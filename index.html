@@ -1,11 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart</title>
+    <meta name="description"
+        content="Flipkart Skeleton UI – This project recreates Flipkart’s main homepage as a single-page skeleton UI, highlighting structured layout and realistic placeholders.">
+    <meta name="keywords" content="Flipkart UI Clone, Frontend Practice, HTML CSS Project, Skeleton Layout">
+    <meta name="author" content="Kushal Zinzuvadia">
+
+    <!-- Open graph meta tags -->
+    <meta property="og:title" content="Flipkart Layout | Responsive Products Home Page Skeleton UI">
+    <meta property="og:description"
+        content="Flipkart Skeleton UI – This project recreates Flipkart’s main homepage as a single-page skeleton UI, highlighting structured layout and realistic placeholders.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/image/flipkart_cover_page.png">
+
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flipkart Layout | Responsive Products Home Page Skeleton UI">
+    <meta name="twitter:description"
+        content="Flipkart Skeleton UI – This project recreates Flipkart’s main homepage as a single-page skeleton UI, highlighting structured layout and realistic placeholders.">
+    <meta name="twitter:image" content="/assets/image/flipkart_cover_page.png">
+
+    <link rel="icon" href="/assets/icon/flipkart.svg">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <title>Flipkart Layout | Responsive Products Home Page Skeleton UI</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-top">
+            <div class="container flex-center">
+                <div class="header-section flex-center header-section--left">
+                    <!-- Logo -->
+                    <a href="/" class="logo-link flex-center" aria-label="Flipkart Home">
+                        <img src="/assets/icon/flipkart-header.svg" alt="Flipkart logo" class="logo-image">
+                    </a>
+
+                    <!-- Search Bar -->
+                    <div class="searchbar-wrapper">
+                        <form role="search" action="#">
+                            <input type="text" class="searchbar-input"
+                                placeholder="Search for products, brands and more"
+                                aria-label="Search for products, brands and more">
+                        </form>
+                        <button class="searchbar-button flex-center" type="button" aria-label="Search">
+                            <img src="/assets/icon/search.svg" alt="Search">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header-section flex-center">
+                    <!-- Login Button -->
+                    <a href="#" class="login-button">
+                        Login
+                    </a>
+
+                    <a href="#" class="header-link flex-center more-link">
+                        <span>More</span>
+                        <img src="/assets/icon/dropdown.svg" alt="" aria-hidden="true">
+                    </a>
+
+                    <a href="#" class="header-link flex-center cart-link">
+                        <img src="/assets/icon/cart.svg" alt="" aria-hidden="true">
+                        <span>Cart</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container flex-center">
+                <nav class="categories-nav">
+                    <div class="categories-wrapper flex-center">
+
+                        <a href="#" class="category-item flex-center" aria-label="Top offers">
+                            <img src="/assets/image/categories/top-offers.svg" alt="Offers">
+                            <span>Top Offers</span>
+                        </a>
+
+                        <a href="#" class="category-item flex-center" aria-label="Grocery">
+                            <img src="/assets/image/categories/grocery.svg" alt="Shop Grocery items">
+                            <span>Grocery</span>
+                        </a>
+
+                        <a href="#" class="category-item flex-center" aria-label="Mobiles">
+                            <img src="/assets/image/categories/mobiles.svg" alt="Shop Mobiles">
+                            <span>Mobiles</span>
+                        </a>
+
+                        <a href="#" class="category-item flex-center" aria-label="Fashion">
+                            <img src="/assets/image/categories/fashion.svg" alt="Shop Fashion">
+                            <div class="category-with-dropdown flex-center">
+                                <span>Fashion</span>
+                                <img src="/assets/icon/dropdown-1.svg" class="dropdown-icon" alt="" aria-hidden="true">
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-item flex-center" aria-label="Electronics">
+                            <img src="/assets/image/categories/electronics.svg" alt="Shop Electronics">
+                            <div class="category-with-dropdown flex-center">
+                                <span>Electronics</span>
+                                <img src="/assets/icon/dropdown-1.svg" class="dropdown-icon" alt="" aria-hidden="true">
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-item flex-center" aria-label="Home">
+                            <img src="/assets/image/categories/home.svg" alt="Shop Home essentials">
+                            <div class="category-with-dropdown flex-center">
+                                <span>Home</span>
+                                <img src="/assets/icon/dropdown-1.svg" class="dropdown-icon" alt="" aria-hidden="true">
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-item flex-center" aria-label="Appliances">
+                            <img src="/assets/image/categories/appliances.svg" alt="Electronic appliances">
+                            <div class="category-with-dropdown flex-center">
+                                <span>Appliances</span>
+                                <img src="/assets/icon/dropdown-1.svg" class="dropdown-icon" alt="" aria-hidden="true">
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-item flex-center" aria-label="Travel">
+                            <img src="/assets/image/categories/travel.svg" alt="Travel essentials">
+                            <span>Travel</span>
+                        </a>
+
+                        <a href="#" class="category-item flex-center" aria-label="Beauty, Toys & more">
+                            <img src="/assets/image/categories/beauty-toys.svg" alt="Shop Beauty, Toys & more items">
+                            <div class="category-with-dropdown flex-center">
+                                <span>Beauty, Toys & More</span>
+                                <img src="/assets/icon/dropdown-1.svg" class="dropdown-icon" aria-hidden="true" alt="">
+                            </div>
+                        </a>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main></main>
 </body>
+
 </html>

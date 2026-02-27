@@ -1,0 +1,168 @@
+/* Header Sections */
+
+.header-top {
+    background: var(--blue-background);
+    padding: 0.75rem 0;
+}
+
+.header-bottom {
+    background-color: white;
+    padding: 0.5rem 0;
+}
+
+/* Layout inside container */
+
+.header-top .container {
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.header-section--left {
+    flex: 1;
+}
+
+.header-bottom .container {
+    justify-content: flex-start;
+}
+
+.header-section {
+    gap: 1rem;
+}
+
+/* Logo */
+
+.logo-link {
+    height: 40px;
+}
+
+.logo-image {
+    height: 2rem;
+    width: auto;
+}
+
+/* Search Bar */
+
+.searchbar-wrapper {
+    position: relative;
+    flex: 1 1 34rem;
+    max-width: 34rem;
+    min-width: 0;
+}
+
+.searchbar-input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+    border: none;
+    border-radius: 2px;
+}
+
+.searchbar-input::placeholder {
+    font-size: 1rem;
+}
+
+.searchbar-button {
+    position: absolute;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    top: 0;
+    bottom: 0;
+    right: 0.5rem;
+    margin: auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+/* Login Button */
+
+.login-button {
+    display: inline-block;
+    background: white;
+    color: var(--blue-background);
+    text-decoration: none;
+    padding: 0.5rem 2.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+/* Header Links */
+
+.header-link {
+    gap: 0.5rem;
+
+    text-decoration: none;
+    color: white;
+    padding: 0 0.75rem;
+    font-weight: 500;
+}
+
+/* Categories Navigation */
+
+.categories-nav {
+    width: 100%;
+}
+
+.categories-wrapper {
+    justify-content: flex-start;
+    gap: 2rem;
+
+    padding: 0.75rem 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.categories-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual Category */
+
+.category-item {
+    flex-direction: column;
+    justify-content: center;
+
+    min-width: 6rem;
+    text-decoration: none;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Category main image */
+
+.category-item>img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+/* Dropdown wrapper */
+
+.category-with-dropdown {
+    gap: 0.25rem;
+}
+
+/* Dropdown icon (relative to text) */
+
+.dropdown-icon {
+    width: 0.8em;
+    height: 0.8em;
+}
+
+/* Hover */
+
+.category-item:hover {
+    color: var(--blue-background);
+}
+
+/* Utility */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
