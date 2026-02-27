@@ -13,8 +13,6 @@
 /* Layout inside container */
 
 .header-top .container {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 2rem;
 }
@@ -24,22 +22,16 @@
 }
 
 .header-bottom .container {
-    display: flex;
-    align-items: center;
     justify-content: flex-start;
 }
 
 .header-section {
-    display: flex;
-    align-items: center;
     gap: 1rem;
 }
 
 /* Logo */
 
 .logo-link {
-    display: flex;
-    align-items: center;
     height: 40px;
 }
 
@@ -62,7 +54,6 @@
     padding: 0.75rem 2.5rem 0.75rem 0.75rem;
     border: none;
     border-radius: 2px;
-    outline: none;
 }
 
 .searchbar-input::placeholder {
@@ -80,30 +71,25 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 /* Login Button */
 
 .login-button {
-    display: inline-block; 
+    display: inline-block;
     background: white;
     color: var(--blue-background);
-    text-decoration: none; 
-    border: none;
+    text-decoration: none;
     padding: 0.5rem 2.5rem;
     font-weight: 600;
     cursor: pointer;
-    border-radius: 1px; 
+    border-radius: 1px;
 }
 
 /* Header Links */
 
 .header-link {
-    display: flex;
-    align-items: center;
     gap: 0.5rem;
 
     text-decoration: none;
@@ -119,8 +105,6 @@
 }
 
 .categories-wrapper {
-    display: flex;
-    align-items: center;
     justify-content: flex-start;
     gap: 2rem;
 
@@ -136,9 +120,7 @@
 /* Individual Category */
 
 .category-item {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 
     min-width: 6rem;
@@ -152,7 +134,7 @@
 
 /* Category main image */
 
-.category-item > img {
+.category-item>img {
     width: 4rem;
     height: 4rem;
     object-fit: contain;
@@ -162,8 +144,6 @@
 /* Dropdown wrapper */
 
 .category-with-dropdown {
-    display: flex;
-    align-items: center;
     gap: 0.25rem;
 }
 
@@ -178,4 +158,11 @@
 
 .category-item:hover {
     color: var(--blue-background);
+}
+
+/* Utility */
+
+.flex-center {
+    display: flex;
+    align-items: center;
 }
