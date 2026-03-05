@@ -85,6 +85,13 @@
     font-weight: 600;
     cursor: pointer;
     border-radius: 1px;
+    transition: all 0.2s ease;
+}
+
+.login-button:hover {
+    background: #f0f0f0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
 }
 
 /* Header Links */
@@ -188,7 +195,7 @@
 }
 
 @media (max-width: 480px) {
-    .category-item > img {
+    .category-item>img {
         width: 3rem;
         height: 3rem;
     }
