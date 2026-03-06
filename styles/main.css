@@ -2,34 +2,34 @@
 
 .product-section {
     width: 100%;
-    max-width: 1500px;
-    padding: 0.5rem;
+    max-width: 94rem;
+    padding: var(--space-sm);
 }
 
 .product-wrapper {
     width: 100%;
     margin: auto;
     display: flex;
-    gap: 16px;
-    padding: 0 1rem;
+    gap: var(--space-lg);
+    padding: 0 var(--space-lg);
     align-items: stretch;
 }
 
 .product-content {
     flex: 1;
-    background: #fff;
+    background: white;
     position: relative;
     display: flex;
     flex-direction: column;
     min-width: 0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-sm);
 }
 
 /* Announcement */
 
 .announcement {
-    padding: 16px;
-    border-bottom: 1px solid #eee;
+    padding: var(--space-lg);
+    border-bottom: 0.0625rem solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,7 @@
 .announcement-left {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: var(--space-lg);
 }
 
 .announcement-left.column {
@@ -47,47 +47,47 @@
 }
 
 .announcement h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
 .time-left {
-    gap: 6px;
+    gap: var(--space-sm);
 }
 
 .timer {
-    color: #777;
-    font-size: 14px;
+    color: var(--gray-text);
+    font-size: 0.875rem;
 }
 
 .sub-text {
-    color: #777;
-    font-size: 14px;
+    color: var(--gray-text);
+    font-size: 0.875rem;
 }
 
 .clock {
-    width: 18px;
+    width: var(--space-xl);
 }
 
 .view-all-btn {
-    background: #2874f0;
-    color: #fff;
+    background: var(--blue-background);
+    color: white;
     border: none;
-    padding: 8px 18px;
+    padding: var(--space-sm) var(--space-lg);
     cursor: pointer;
     font-weight: 500;
 }
 
 .view-all-btn:hover {
-    background: #1c5ed6;
+    background: var(--blue-hover);
 }
 
 /* Product Feed */
 
 .product-feed {
     display: flex;
-    gap: 20px;
-    padding: 20px;
+    gap: var(--space-xl);
+    padding: var(--space-xl);
     overflow-x: auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -101,7 +101,7 @@
 
 .product-card {
     text-decoration: none;
-    color: #000;
+    color: black;
     flex: 0 0 auto;
     width: clamp(140px, 22vw, 200px);
     display: flex;
@@ -112,8 +112,8 @@
 }
 
 .product-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.25rem);
+    box-shadow: var(--shadow-md);
 }
 
 .product-image {
@@ -131,25 +131,25 @@
 }
 
 .product-info {
-    margin-top: 10px;
+    margin-top: var(--space-sm);
 }
 
 .title {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .offer {
-    color: #388e3c;
+    color: var(--offer-text-green);
     font-weight: 600;
-    font-size: 14px;
-    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    margin-top: var(--space-md);
 }
 
 .subtitle {
-    font-size: 13px;
-    color: #555;
-    margin-top: 0.75rem;
+    font-size: 0.8125rem;
+    color: var(--gray-text);
+    margin-top: var(--space-md);
 }
 
 /* Scroll Button */
@@ -159,17 +159,17 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: #fff;
-    border: 1px solid #ddd;
-    font-size: 20px;
-    padding: 26px 12px;
+    background: white;
+    border: 0.0625rem solid #ddd;
+    font-size: 1.25rem;
+    padding: var(--space-2xl) var(--space-md);
     cursor: pointer;
 }
 
 /* Offer Card */
 
 .offer-card {
-    flex: 0 0 250px;
+    flex: 0 0 15rem;
     display: flex;
 }
 
@@ -196,13 +196,13 @@
 
 @media (max-width: 768px) {
     .product-feed {
-        padding: 15px;
-        gap: 15px;
+        padding: var(--space-lg);
+        gap: var(--space-lg);
         align-items: start;
     }
 
     .announcement {
-        padding: 12px;
+        padding: var(--space-md);
     }
 
     .product-card {
@@ -220,12 +220,12 @@
 
 @media (max-width: 480px) {
     .product-feed {
-        padding: 10px;
-        gap: 10px;
+        padding: var(--space-sm);
+        gap: var(--space-sm);
     }
 
     .announcement {
-        padding: 8px;
+        padding: var(--space-sm);
     }
 
     .product-card {
@@ -237,30 +237,24 @@
     }
 
     .scroll-btn {
-        padding: 20px 8px;
-        font-size: 16px;
+        padding: var(--space-xl) var(--space-sm);
+        font-size: 1rem;
     }
 
     .view-all-btn {
-        padding: 6px 12px;
-        font-size: 12px;
+        padding: 0.375rem var(--space-md);
+        font-size: 0.75rem;
     }
 
-    .title {
-        font-size: 12px;
-    }
-
-    .offer {
-        font-size: 12px;
-    }
-
+    .title,
+    .offer,
     .subtitle {
-        font-size: 11px;
+        font-size: 0.75rem;
     }
 
     .announcement-left {
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: var(--space-sm);
     }
 }
