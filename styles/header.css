@@ -118,7 +118,6 @@
     padding: 0.75rem 0;
     overflow-x: auto;
     scrollbar-width: none;
-    scroll-behavior: smooth;
 }
 
 .categories-wrapper::-webkit-scrollbar {
@@ -185,7 +184,6 @@
 
     .searchbar-wrapper {
         max-width: 100%;
-        flex: 1;
     }
 
     .login-button {

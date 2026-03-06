@@ -169,7 +169,6 @@
 /* Offer Card */
 
 .offer-card {
-    width: 250px;
     flex: 0 0 250px;
     display: flex;
 }
