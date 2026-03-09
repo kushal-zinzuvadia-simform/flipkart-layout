@@ -78,7 +78,8 @@
     font-weight: 500;
 }
 
-.view-all-btn:hover {
+.view-all-btn:hover,
+.view-all-btn:focus-visible {
     background: var(--blue-hover);
 }
 
@@ -111,7 +112,8 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.product-card:hover {
+.product-card:hover,
+.product-card:focus-visible {
     transform: translateY(-0.25rem);
     box-shadow: var(--shadow-md);
 }

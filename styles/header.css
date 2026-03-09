@@ -88,7 +88,8 @@
     transition: all 0.2s ease;
 }
 
-.login-button:hover {
+.login-button:hover,
+.login-button:focus-visible {
     background: #f0f0f0;
     box-shadow: var(--shadow-sm);
     transform: translateY(-1px);
@@ -162,7 +163,8 @@
 
 /* Hover */
 
-.category-item:hover {
+.category-item:hover,
+.category-item:focus-visible {
     color: var(--blue-background);
 }
 
