@@ -2,19 +2,19 @@
 
 .header-top {
     background: var(--blue-background);
-    padding: 0.75rem 0;
+    padding: var(--space-md) 0;
 }
 
 .header-bottom {
     background-color: white;
-    padding: 0.5rem 0;
+    padding: var(--space-sm) 0;
 }
 
 /* Layout inside container */
 
 .header-top .container {
     justify-content: space-between;
-    gap: 2rem;
+    gap: var(--space-2xl);
 }
 
 .header-section--left {
@@ -26,13 +26,13 @@
 }
 
 .header-section {
-    gap: 1rem;
+    gap: var(--space-lg);
 }
 
 /* Logo */
 
 .logo-link {
-    height: 40px;
+    height: 2.5rem;
 }
 
 .logo-image {
@@ -51,9 +51,9 @@
 
 .searchbar-input {
     width: 100%;
-    padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+    padding: var(--space-md) 2.5rem var(--space-md) var(--space-md);
     border: none;
-    border-radius: 2px;
+    border-radius: var(--radius-sm);
 }
 
 .searchbar-input::placeholder {
@@ -66,7 +66,7 @@
     aspect-ratio: 1;
     top: 0;
     bottom: 0;
-    right: 0.5rem;
+    right: var(--space-sm);
     margin: auto;
     background: transparent;
     border: none;
@@ -81,20 +81,27 @@
     background: white;
     color: var(--blue-background);
     text-decoration: none;
-    padding: 0.5rem 2.5rem;
+    padding: var(--space-sm) 2.5rem;
     font-weight: 600;
     cursor: pointer;
-    border-radius: 1px;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+}
+
+.login-button:hover,
+.login-button:focus-visible {
+    background: #f0f0f0;
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
 }
 
 /* Header Links */
 
 .header-link {
-    gap: 0.5rem;
-
+    gap: var(--space-sm);
     text-decoration: none;
     color: white;
-    padding: 0 0.75rem;
+    padding: 0 var(--space-md);
     font-weight: 500;
 }
 
@@ -108,7 +115,7 @@
     justify-content: flex-start;
     gap: 2rem;
 
-    padding: 0.75rem 0;
+    padding: var(--space-md) 0;
     overflow-x: auto;
     scrollbar-width: none;
 }
@@ -138,13 +145,13 @@
     width: 4rem;
     height: 4rem;
     object-fit: contain;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-sm);
 }
 
 /* Dropdown wrapper */
 
 .category-with-dropdown {
-    gap: 0.25rem;
+    gap: var(--space-xs);
 }
 
 /* Dropdown icon (relative to text) */
@@ -156,7 +163,8 @@
 
 /* Hover */
 
-.category-item:hover {
+.category-item:hover,
+.category-item:focus-visible {
     color: var(--blue-background);
 }
 
@@ -165,4 +173,34 @@
 .flex-center {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .header-top .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-md);
+    }
+
+    .searchbar-wrapper {
+        max-width: 100%;
+    }
+
+    .login-button {
+        padding: var(--space-sm) var(--space-xl);
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-item > img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .category-item {
+        font-size: var(--space-md);
+        min-width: 5rem;
+    }
 }
