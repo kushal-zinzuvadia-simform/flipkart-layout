@@ -132,11 +132,14 @@
 
 .product-info {
     margin-top: var(--space-sm);
+    width: 100%;
 }
 
 .title {
-    font-weight: 500;
     font-size: 0.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .offer {
